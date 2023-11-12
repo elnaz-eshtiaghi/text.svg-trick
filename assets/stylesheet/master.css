@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: paci;
+  src: url(../font/Pacifico-Regular.ttf);
+}
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  font-family: cola;
+}
+section > svg {
+  width: 100%;
+  text-align: center;
+  font-family: paci;
+  text-transform: uppercase;
+}
+section > svg > path {
+  size: 300px;
+  fill: white;
+}
+section > svg > text {
+  font-size: 9vw;
+  fill: transparent;
+  stroke: white;
+  stroke-width: 1px;
+  stroke-dasharray: 0 300px;
+  transition: 5s;
+}
+section > svg > text:nth-of-type(1) {
+  animation: fill 0.5s 6.5s infinite, text 0.5s 0.5s forwards;
+}
+section > svg > text:nth-of-type(2) {
+  animation: text 0.5s 1s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(3) {
+  animation: text 0.5s 1.5s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(4) {
+  animation: text 0.5s 2s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(5) {
+  animation: text 0.5s 2.5s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(6) {
+  animation: text 0.5s 3s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(7) {
+  animation: text 0.5s 3.5s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(8) {
+  animation: text 0.5s 4s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(9) {
+  animation: text 0.5s 4.5s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(10) {
+  animation: text 0.5s 5s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg > text:nth-of-type(11) {
+  animation: text 0.5s 5.5s forwards, fill 0.5s 6.5s infinite;
+}
+section > svg:nth-of-type(1) {
+  height: 20%;
+}
+section > svg:nth-of-type(2) {
+  height: 40%;
+}
+
+@keyframes text {
+  0% {
+    stroke-dasharray: 0 300px;
+  }
+  100% {
+    stroke-dasharray: 300px 0;
+  }
+}
+@keyframes fill {
+  70% {
+    fill: transparent;
+    stroke: white;
+  }
+  100% {
+    fill: white;
+  }
+}/*# sourceMappingURL=master.css.map */
